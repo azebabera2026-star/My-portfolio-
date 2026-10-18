@@ -1,0 +1,102 @@
+/* Color Variables */
+:root {
+    --bg-color: #0d0b14;
+    --text-primary: #ffffff;
+    --text-muted: #94a3b8;
+    --accent-purple: #6d28d9;
+    --accent-purple-hover: #5b21b6;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 5%;
+    background-color: rgba(13, 11, 20, 0.85);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.code-icon {
+    color: #8b5cf6;
+    font-weight: bold;
+}
+/* Nav Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--text-primary);
+}
+
+/* Hire Me Button */
+.hire-btn {
+    background-color: var(--accent-purple);
+    color: var(--text-primary);
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.hire-btn:hover {
+    background-color: var(--accent-purple-hover);
+    transform: translateY(-1px);
+}
+/* Nav Actions Container */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* Social Icons Style */
+.social-icon {
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
