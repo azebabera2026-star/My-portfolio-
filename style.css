@@ -538,3 +538,66 @@ body {
     border-color: #a855f7;
     color: #ffffff;
 }
+/* Projects Section Styling */
+.projects-section {
+    padding: 80px 0;
+    background-color: #0d0b14;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: rgba(22, 19, 38, 0.7);
+    border: 1px solid rgba(168, 85, 247, 0.15);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 12px 30px rgba(168, 85, 247, 0.15);
+}
+
+.project-category {
+    font-size: 0.8rem;
+    color: #a855f7;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin: 8px 0 12px 0;
+}
+
+.project-desc {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-techs span {
+    background: rgba(168, 85, 247, 0.1);
+    color: #c084fc;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
