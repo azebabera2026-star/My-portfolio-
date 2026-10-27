@@ -601,3 +601,16 @@ body {
     border-radius: 6px;
     border: 1px solid rgba(168, 85, 247, 0.2);
 }
+/* ==========================================
+   Scroll Progress Bar (Day 7)
+========================================== */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #a855f7, #06b6d4);
+    width: 0%;
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+}
