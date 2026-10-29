@@ -649,3 +649,44 @@ body {
 .skill-card:hover::before {
     left: 100%;
 }
+/* ==========================================
+   Day 9: Availability Badge Styling
+========================================== */
+.availability-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    padding: 8px 16px;
+    border-radius: 50px;
+    color: #d8b4fe;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #a855f7;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #a855f7;
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 8px rgba(168, 85, 247, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(168, 85, 247, 0);
+    }
+}
