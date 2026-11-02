@@ -25,3 +25,22 @@ filterButtons.forEach(button => {
         });
     });
 });
+// Day 11: Animated Counters for Experience & Projects
+const counters = document.querySelectorAll('.about-stats h3, .stats-card h3, .about-grid h3'); // እንደየ HTML መዋቅርሽ
+let animated = false;
+
+window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY + window.innerHeight;
+    const aboutSection = document.querySelector('#about');
+    
+    if (aboutSection) {
+        const sectionTop = aboutSection.offsetTop;
+        
+        if (scrollPos >= sectionTop && !animated) {
+            const experienceCounter = document.querySelector('.about-stats div:nth-child(1) h3, .stats-card:nth-child(1) h3');
+            const projectsCounter = document.querySelector('.about-stats div:nth-child(2) h3, .stats-card:nth-child(2) h3');
+            
+            animated = true;
+        }
+    }
+});
