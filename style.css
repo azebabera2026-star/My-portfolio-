@@ -734,3 +734,14 @@ body {
     border-color: rgba(168, 85, 247, 0.8);
     box-shadow: 0 12px 35px rgba(168, 85, 247, 0.25);
 }
+/* ==========================================
+   Smooth Scrolling & Nav Polish
+========================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-links a.active, .nav-links li a:hover {
+    color: #a855f7;
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+}
